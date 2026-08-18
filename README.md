@@ -152,9 +152,6 @@ This project strengthened my ability to:
 
 ```text
 PowerBI_Data_Jobs_Dashboard/
-│── Data/
-│   ├── job_postings_flat.csv
-│   └──README.md
 ├── Images/
 │   ├── 1_Jobs_Dashboard_Overview.gif
 │   ├── 1_Jobs_Dashboard_Main_Page.gif
