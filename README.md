@@ -57,7 +57,7 @@ This dashboard was designed to help answer the following questions:
 
 The main dashboard gives users a high-level view of the data job market and allows them to filter the entire page by job title.
 
-![Data Jobs Dashboard Main Page](./Images/1_Jobs_Dashboard_Main_Page.gif)
+![Data Jobs Dashboard Main Page](./Images/1_Jobs_Dashboard_Main_Page.png)
 
 
 ### Main Dashboard Features
@@ -82,7 +82,7 @@ This page gives job seekers a quick way to compare data careers and understand h
 
 The drill-through page provides a focused analysis of one selected job title. Users can move from the main dashboard into this page while preserving the context of their selection.
 
-![Job Title Drill-Through Page](./Images/1_Jobs_Dashboard_Drill_Through.gif)
+![Job Title Drill-Through Page](./Images/1_Jobs_Dashboard_Drill_Through.png)
 
 
 ### Drill-Through Features
