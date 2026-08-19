@@ -7,6 +7,15 @@ I built this interactive Power BI report to help job seekers explore the 2024 da
 
 The finished report includes a high-level market dashboard and a drill-through page for investigating individual job titles in greater detail.
 
+## Key Findings
+
+- The dataset contains approximately **478,900 data job postings** from 2024.
+- The overall median salary is approximately **$113,000 per year** and **$48 per hour**.
+- Senior Data Scientist and Machine Learning Engineer roles have the highest median yearly salaries among the roles displayed, at approximately **$156,000** and **$155,000**.
+- Senior Data Engineer and Software Engineer roles also rank near the top, with median yearly salaries of approximately **$147,000** and **$145,000**.
+- Monthly job-posting volume generally declined during the second half of 2024 before rebounding in December.
+- Compensation, remote-work availability, degree requirements, benefits, employment type, location, and hiring platform vary by job title.
+
 ### Dashboard File
 
 Download the completed Power BI report:
@@ -30,16 +39,17 @@ This dashboard was designed to help answer the following questions:
 ## Power BI Skills Demonstrated
 
 - **Power Query and ETL:** Imported, cleaned, transformed, and prepared job-posting data for analysis
-- **Data modeling:** Organized the report model around the primary job-postings table and supporting visual tables
-- **Implicit measures:** Aggregated salary and job-count fields to create report-level KPIs
-- **Calculated fields:** Created additional fields, including a salary star rating, to support dashboard interpretation
-- **Interactive filtering:** Added job-title slicers that update the report based on the user's selection
+- **Streamlined report model:** Organized the analysis around a single prepared `job_postings_flat` table
+- **Implicit measures:** Aggregated job counts, median yearly salaries, and median hourly salaries
+- **Calculated fields:** Created a salary star rating to make compensation easier to interpret
+- **Interactive filtering:** Added a job-title slicer that dynamically updates the dashboard
 - **Drill-through analysis:** Connected the market overview to a detailed page for individual job titles
-- **Navigation design:** Used buttons and a page navigator to create a guided report experience
-- **Core visualizations:** Built bar, column, line, area, scatter, donut, treemap, waterfall, funnel, and ribbon charts
-- **Geospatial analysis:** Used map, filled-map, and ArcGIS visuals to analyze job locations
-- **KPI reporting:** Used cards, gauges, KPI visuals, tables, matrices, and sparklines to summarize performance
-- **Dashboard design:** Structured visuals into a consistent, readable, and user-focused interface
+- **Report navigation:** Used action buttons to guide users between the overview and detail pages
+- **Trend analysis:** Visualized monthly job-posting activity throughout 2024
+- **Salary analysis:** Compared roles using bar charts, scatter plots, cards, and gauges
+- **Geospatial analysis:** Used a map to examine the global distribution of job opportunities
+- **Detailed reporting:** Used a matrix with quarterly values and monthly sparklines
+- **Dashboard design:** Organized the report into two focused and consistent pages
 
 ## Dashboard Pages
 
@@ -94,7 +104,7 @@ The drill-through page converts a broad market overview into a role-specific car
 
 ## Data Model
 
-The report uses a primary `job_postings_flat` table containing the job-market data. 
+The report uses a streamlined single-table model centered on `job_postings_flat`.
 
 The primary dataset contains fields related to:
 - Job titles
@@ -107,16 +117,18 @@ The primary dataset contains fields related to:
 - Employment schedules
 - Job-posting platforms
 
-## Analytical Approach
+The source CSV is intentionally excluded from this repository because of its size. The imported data model is included inside the `.pbix` file, and the original dataset can be accessed through the course repository linked in the Acknowledgment section.
+
+## Analytical Workflow
 
 1. Imported the 2024 job-posting dataset into Power BI.
 2. Prepared and transformed the data using Power Query.
-3. Reviewed different visual types across dedicated development pages.
-4. Created summary metrics for salaries, job counts, and job-posting characteristics.
+3. Reviewed salary, job-count, location, benefit, and employment-schedule fields.
+4. Created summary metrics and the salary star-rating field.
 5. Built a high-level dashboard with interactive job-title filtering.
 6. Created a drill-through page for role-specific analysis.
-7. Added navigation elements to make the report easier to explore.
-8. Organized the visuals into a consistent two-page portfolio dashboard.
+7. Added navigation elements and tested the report interactions.
+8. Removed the development pages to create a focused two-page portfolio report.
 
 ## What I Learned
 
@@ -128,7 +140,7 @@ This project strengthened my ability to:
 - Compare compensation, demand, benefits, and geographic trends across job roles
 - Use cards, gauges, matrices, and sparklines to communicate KPIs at different levels of detail
 - Organize multiple visuals into a clear and consistent dashboard experience
-- Design a report for both high-level exploration and detailed analysis
+- Simplify a development report into a focused, recruiter-ready dashboard
 
 ## Limitations
 
@@ -142,28 +154,29 @@ This project strengthened my ability to:
 
 1. Download [`1_Jobs_Dashboard.pbix`](./1_Jobs_Dashboard.pbix).
 2. Open the file in Power BI Desktop.
-3. Use the Home page or navigation controls to explore the report.
-4. Open the **Data Jobs Dashboard** page.
-5. Select a role from the job-title slicer to update the dashboard.
-6. Use drill-through on a job title to open the detailed analysis page.
+3. Select a role from the job-title slicer on the **Data Jobs Dashboard** page.
+4. Review the updated salary, demand, trend, and comparison visuals.
+5. Drill through on a job title to open its detailed profile.
+6. Review the salary, remote-work, degree, insurance, location, schedule, and platform information.
 7. Use the back button to return to the main dashboard.
 
 ## Repository Structure
 
 ```text
-PowerBI_Data_Jobs_Dashboard/
+Power-BI-Data-Jobs-Dashboard/
 ├── Images/
 │   ├── 1_Jobs_Dashboard_Overview.gif
 │   ├── 1_Jobs_Dashboard_Main_Page.gif
 │   └── 1_Jobs_Dashboard_Drill_Through.gif
+├── .gitignore
 ├── 1_Jobs_Dashboard.pbix
 └── README.md
 ```
 
 ## Conclusion
 
-This project demonstrates how Power BI can turn a large job-posting dataset into an accessible career-analysis tool. By combining data transformation, interactive filtering, KPI reporting, multiple visualization types, navigation, and drill-through functionality, I created a report that supports both broad market exploration and detailed job-title analysis.
+This project demonstrates how Power BI can turn a job-posting dataset into an accessible career-analysis tool. By combining ETL, interactive filtering, salary and trend analysis, KPI reporting, navigation, and drill-through functionality, I created a focused two-page report that supports both broad market exploration and detailed job-title research.
 
 ## Acknowledgment
 
-The dataset provided through [Luke Barousse's Power BI Data Analytics course](https://github.com/lukebarousse/PowerBI_Data_Analytics_Course). I used the course materials to develop and document my own Power BI report.
+The dataset and original project framework were provided through [Luke Barousse's Power BI Data Analytics course](https://github.com/lukebarousse/PowerBI_Data_Analytics_Course). I used the course materials to develop, refine, and document my own Power BI dashboard.
